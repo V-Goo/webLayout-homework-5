@@ -103,13 +103,22 @@ img {
 
   outline: 1px solid brown;
 }
+
+.btn {
+  border: 1px solid #cc9933;
+  border-radius: 12px;
+  background-color: #cc9933;
+  color: #ffffff;
+  font-family: "Muller Bold";
+  font-size: 16px;
+  font-weight: 400;
+}
 /* End Common Area */
 
 
 /* Header Area */
 
 .header {
-  /* margin-bottom: 70px; */
 }
 
 .header-top {
@@ -124,7 +133,6 @@ img {
   margin-left: 25px;
   font-size: 22px;
   font-family: 'Muller Bold';
-  line-height: 1px;
   color: #666;
 }
 
@@ -137,16 +145,17 @@ img {
   background-repeat: no-repeat;
   background-position: left;
   font-family: 'Muller Bold';
-  line-height: 22px;
   color: #c93;
+
+  line-height: 1.4;
 }
 
 /* NavBar */
 
 .header-nav {
   display: flex;
-  padding-right: 20px;
   padding-top: 11px;
+  padding-right: 20px;
   padding-bottom: 11px;
   border-radius: 12px;
   background-color: #fff;
@@ -160,10 +169,6 @@ img {
 .nav-list__item {
   margin: 0 23px;
   color: #333333;
-  font-family: "Muller Regular";
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 1px;
 }
 
 .header-search {
@@ -189,69 +194,59 @@ img {
 /* First Screen */
 
 .first-screen {
-  /* display: flex; */
-  /* justify-content: space-between; */
-  /* margin-bottom: 69px; */
+
 }
 
 .first-screen-flex {
 
 }
-.first-screen-title {
-  /* padding-top: 19px; */
-  /* margin-bottom: 43px; */
-}
-.form-reservation {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
 
-  /* width: 518px; */
+.first-screen-title {
   
-  /* height: 540px; */
+}
+
+/* Form Reservation Section */
+
+.flex-block {
+  /* display: flex; */
+  flex-direction: column;
+  align-content: space-between;
+  justify-content: space-between;
 }
 
 .reservation-item {
-  /* Style for "Прямоуголь" */
-width: 518px;
-height: 70px;
-border: none;
-border-radius: 12px;
-background-color: #ffffff;
-}
-
-.btn {
-border: 1px solid #cc9933;
-border-radius: 12px;
-background-color: #cc9933;
-color: #ffffff;
-font-family: "Muller Bold";
-font-size: 16px;
-font-weight: 400;
-/* line-height: 32px; */
+  width: 518px;
+  height: 70px;
+  border: none;
+  border-radius: 12px;
+  background-color: #ffffff;
 }
 
 .btn-number {
   display: flex;
   align-content: center;
 }
+
 .reservation-btn {
   padding: 27px 30px;
   border: none;
 }
+
 .reservation-available {
   margin-left: 30px;
   align-self: center;
 }
+
 .numder-item {
   color: #cc9933;
 }
 
-/* Special Offer Section */
+/* Special Offer Article */
 
 .offer-position {
   position: relative;
 }
+
 .special-offer-text {
   position: absolute;
   top: 265px;
@@ -266,43 +261,40 @@ font-weight: 400;
   font-family: "Muller Bold";
   font-size: 66px;
   font-weight: 400;
+
   line-height: 58px;
 }
+
 .flex-wrapper {
   display: flex;
   justify-content: space-between;
 }
+
 .text-price {
   margin: 0;
-  /* margin-right: 15px; */
-  /* width: 177px; */
-/* height: 33px; */
-opacity: 0.49;
-color: #fff;
-/* font-family: "Muller Regular"; */
-font-size: 35px;
-/* font-weight: 400; */
-line-height: 32px;
+  opacity: 0.49;
+  color: #fff;
+  font-size: 35px;
+
+  line-height: 32px;
+
 }
 
 .special-offer-links {
-  /* padding-top: 20px; */
   
 }
+
 .special-offer-link {
-/* margin-left: auto; */
-padding: 15px;
-  /* text-align: right; */
-  /* width: 86px; */
-  /* height: 16px; */
+  padding: 15px;
   color: #fc6;
   font-family: "Muller Regular";
   font-size: 16px;
   font-weight: 400;
+
   line-height: 32px;
+
   background-image: url(../img/arrow.png);
   background-repeat: no-repeat;
-  /* background-size: 100%; */
   background-position: right;
 }
 
@@ -310,55 +302,18 @@ padding: 15px;
 
 .about {
   margin-bottom: 53px;
-  /* margin-top: -3px; */
-  /* margin-left: -2px; */
-  /* padding-left: 45px; */
 }
+
 .about-title {
-  /* margin-block-start: 0; */
-  /* margin-block-end: 0; */
-  /* margin-inline-start: 0; */
-  /* margin-inline-end: 0; */
-
-  /* outline: 2px solid orchid; */
   margin-bottom: 9px;
-  /* line-height: 1; */
-  /* line-height: 20px; */
 }
-
-/* .experiment-p {
-  margin-bottom: 100px;
-
-  margin-block-start: 0;
-  margin-block-end: 0;
-  margin-inline-start: 0;
-  margin-inline-end: 0;
-
-  outline: 1px solid rebeccapurple;
-
-  line-height: 10px;
-  font-size: 20px;
-} */
-
-/* 
-.test-2 {
-  width: 100%;
-  height: 40px;
-  outline: 1px solid olivedrab;
-} */
-
-
-
 
 .about-text {
   padding-left: 43px;
   width: 930px;
   color: #666666;
-  /* font-family: "Muller Regular"; */
-  /* font-size: 16px; */
-  /* font-weight: 400; */
+
   line-height: 2;
-  /* line-height: 32px; */
 }
 
 /* Services */
@@ -377,8 +332,8 @@ padding: 15px;
 
 .service-card {
   padding-left: 45px;
-border-radius: 12px;
-background-color: #ffffff;
+  border-radius: 12px;
+  background-color: #ffffff;
 }
 
 .servise-card-img {
@@ -386,11 +341,12 @@ background-color: #ffffff;
 }
 
 .service-card-title {
-color: #cc9933;
-font-family: "Muller Medium";
-font-size: 22px;
-font-weight: 400;
-line-height: 32px;
+  color: #cc9933;
+  font-family: "Muller Medium";
+  font-size: 22px;
+  font-weight: 400;
+
+  line-height: 32px;
 }
 .service-card-link {
   padding-right: 15px;
