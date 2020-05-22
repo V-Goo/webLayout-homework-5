@@ -26,9 +26,15 @@
 }
 
 
+/* Drop Syyle Area */
+
 * {
   margin: 0;
   padding: 0;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-inline-start: 0;
+  margin-inline-end: 0;
   box-sizing: border-box;
 }
 
@@ -46,7 +52,6 @@ a {
 }
 
 ul {
-  padding: 0;
   list-style: none;
 }
 
@@ -65,22 +70,52 @@ img {
 	overflow: hidden;
 }
 
-/* End Drop Secion */
+/* End Drop Style Area */
 
+
+/* Common Area */
 
 .container {
   margin: 0 auto;
   max-width: 1170px;
+  outline: 2px solid orangered;
 }
 
+
+.common-section {
+  margin-bottom: 70px;
+
+  outline: 1px solid cadetblue;
+}
+
+.common-flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.common-title {
+  margin-left: 43px;
+  margin-bottom: 23px;
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 1;
+  color: #333333;
+
+  outline: 1px solid brown;
+}
+/* End Common Area */
+
+
+/* Header Area */
 
 .header {
   /* margin-bottom: 70px; */
 }
+
 .header-top {
   display: flex;
   align-items: center;
-  margin-bottom: 25px;
+  margin-bottom: 30px;
   padding-top: 30px;
 
 }
@@ -151,29 +186,21 @@ img {
 
 /* Main */
 
-.common-section {
-  margin-bottom: 70px;
-  /* line-height: 0; */
-  outline: solid 1px orange;
-}
-
-.common-title {
-  margin-left: 43px;
-  margin-bottom: 23px;
-  color: #333333;
-  font-size: 40px;
-  font-weight: 400;
-  /* line-height: 32px; */
-}
-
 /* First Screen */
 
 .first-screen {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 69px;
+  /* display: flex; */
+  /* justify-content: space-between; */
+  /* margin-bottom: 69px; */
 }
 
+.first-screen-flex {
+
+}
+.first-screen-title {
+  /* padding-top: 19px; */
+  /* margin-bottom: 43px; */
+}
 .form-reservation {
   display: flex;
   flex-direction: column;
@@ -181,7 +208,7 @@ img {
 
   /* width: 518px; */
   
-  height: 540px;
+  /* height: 540px; */
 }
 
 .reservation-item {
@@ -219,6 +246,9 @@ font-weight: 400;
 .numder-item {
   color: #cc9933;
 }
+
+/* Special Offer Section */
+
 .offer-position {
   position: relative;
 }
@@ -285,10 +315,41 @@ padding: 15px;
   /* padding-left: 45px; */
 }
 .about-title {
-  margin-bottom: 15px;
-  /* line-height: 32px; */
-  line-height: 32px;
+  /* margin-block-start: 0; */
+  /* margin-block-end: 0; */
+  /* margin-inline-start: 0; */
+  /* margin-inline-end: 0; */
+
+  /* outline: 2px solid orchid; */
+  margin-bottom: 9px;
+  /* line-height: 1; */
+  /* line-height: 20px; */
 }
+
+/* .experiment-p {
+  margin-bottom: 100px;
+
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-inline-start: 0;
+  margin-inline-end: 0;
+
+  outline: 1px solid rebeccapurple;
+
+  line-height: 10px;
+  font-size: 20px;
+} */
+
+/* 
+.test-2 {
+  width: 100%;
+  height: 40px;
+  outline: 1px solid olivedrab;
+} */
+
+
+
+
 .about-text {
   padding-left: 43px;
   width: 930px;
@@ -296,7 +357,8 @@ padding: 15px;
   /* font-family: "Muller Regular"; */
   /* font-size: 16px; */
   /* font-weight: 400; */
-  line-height: 32px;
+  line-height: 2;
+  /* line-height: 32px; */
 }
 
 /* Services */
@@ -304,7 +366,9 @@ padding: 15px;
 .service-list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  /* justify-content: space-between; */
+  place-content: space-between;
+
 }
 
 .servise-item {

@@ -29,7 +29,8 @@
         </ul>
         <!-- <input type="text" class="header-search" placeholder="Поиск"> -->
         <div class="header-search">
-          <input type="search" class="header-search-input" name="header-search-input" id="header-search-input" placeholder="Поиск">
+          <input type="search" class="header-search-input" name="header-search-input" id="header-search-input"
+            placeholder="Поиск">
         </div>
       </nav>
     </div>
@@ -37,51 +38,61 @@
   </header>
 
   <main class="main">
-    <div class="container">
-      <section class="first-screen common-section">
+    <section class="first-screen common-section">
+      <div class="container">
         <h1 class="visually-hidden">Сеть отелей "Лагуна"</h1>
-        <section class="reservation-form section-first">
-          <h2 class="title-reservation-form common-title">Быстрая бронь</h2>
-          <form action="#" class="form-reservation">
-            <input type="text" class="reservation-item" placeholder="Город">
-            <input type="text" class="reservation-item" placeholder="Категория номера">
-            <input type="text" class="reservation-item" placeholder="Дата заселения">
-            <input type="text" class="reservation-item" placeholder="Количесво ночей">
-            <input type="text" class="reservation-item" placeholder="Количество гостей">
-            <div class="btn-number">
-            <button class="reservation-btn btn">Найти номер</button>
-            <p class="reservation-available"><span class="numder-item">9 756</span> предложений доступно</p></div>
-          </form>
-        </section>
-        <!-- /.reservation-form -->
+        <div class="first-screen-flex common-flex">
+          <section class="reservation-form section-first">
+            <h2 class="common-title">Быстрая бронь</h2>
+            <form action="#" class="form-reservation">
+              <input type="text" class="reservation-item" placeholder="Город">
+              <input type="text" class="reservation-item" placeholder="Категория номера">
+              <input type="text" class="reservation-item" placeholder="Дата заселения">
+              <input type="text" class="reservation-item" placeholder="Количесво ночей">
+              <input type="text" class="reservation-item" placeholder="Количество гостей">
+              <div class="btn-number">
+                <button class="reservation-btn btn">Найти номер</button>
+                <p class="reservation-available"><span class="numder-item">9 756</span> предложений доступно</p>
+              </div>
+            </form>
+          </section>
+          <!-- /.reservation-form -->
 
-        <article class="special-offer section-first">
-          <h2 class="title-special-offer common-title">Спецпредложение</h2>
-          <div class="offer-position">
-            <div class="special-offer-img">
-              <img src="img/22.jpg" alt="Номера категории люкс">
-            </div>
-            <div class="special-offer-text">
-              <p class="text-main">Номера категории люкс</p>
-              <div class="flex-wrapper">
-                <p class="text-price">от 5 000 р</p>
-                <div class="special-offer-links">
-                  <a href="https://ya.ru" target="_blank" class="special-offer-link">Подробнее</a>
+          <article class="special-offer section-first">
+            <h2 class="common-title">Спецпредложение</h2>
+            <div class="offer-position">
+              <div class="special-offer-img">
+                <img src="img/22.jpg" alt="Номера категории люкс">
+              </div>
+              <div class="special-offer-text">
+                <p class="text-main">Номера категории люкс</p>
+                <div class="flex-wrapper">
+                  <p class="text-price">от 5 000 р</p>
+                  <div class="special-offer-links">
+                    <a href="https://ya.ru" target="_blank" class="special-offer-link">Подробнее</a>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-          <!-- /.offer-position -->
-        </article>
+            <!-- /.offer-position -->
+          </article>
+        </div>
         <!-- /.special-offer -->
-      </section>
-      <!-- /.first-screen -->
-      <!-- </div> -->
-      <!-- /.container -->
+      </div>
+    </section>
+    <!-- /.first-screen -->
+    <!-- </div> -->
+    <!-- /.container -->
 
-      <!-- <div class="container"> -->
-      <section class="about common-section">
+    <!-- <div class="container"> -->
+    <section class="about common-section">
+      <div class="container">
         <h2 class="common-title about-title"> О нас</h2>
+        <!-- <p class="experiment-p">Далеко-далеко, за словесными. h f р Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis, iure. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus, optio.</p> -->
+        <!-- <div class="test-2"> -->
+          <!-- <p class="experiment-p">Далеко-далеко, за словесными. h f р Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis, iure.</p> -->
+        <!-- </div> -->
+
         <p class="about-text">
           Идейные соображения высшего порядка, а также сложившаяся структура организации влечет за собой процесс
           внедрения и модернизации системы обучения кадров, соответствует насущным потребностям. Идейные соображения
@@ -89,10 +100,12 @@
           эксперимент проверки системы обучения кадров, соответствует насущным потребностям. Равным образом сложившаяся
           структура организации требуют определения и уточнения существенных финансовых и административных условий.
         </p>
-      </section>
-      <!-- /.about -->
+      </div>
+    </section>
+    <!-- /.about -->
 
-      <section class="service common-section">
+    <section class="service common-section">
+      <div class="container">
         <h2 class="common-title">Услуги</h2>
         <ul class="service-list">
           <li class="servise-item">
@@ -106,7 +119,7 @@
               <p class="service-card-text">Далеко-далеко за словесными горами в стране гласных, и согласных живут.</p>
             </article>
           </li>
-         
+
           <li class="servise-item">
             <article class="service-card">
               <div class="servise-card-img">
@@ -115,10 +128,11 @@
               <h3 class="service-card-title">
                 <a href="#" class="service-card-link">Аренда банкетных залов</a>
               </h3>
-              <p class="service-card-text">Значимость этих проблем настолько очевидна, что дальнейшее развитие различных форм.</p>
+              <p class="service-card-text">Значимость этих проблем настолько очевидна, что дальнейшее развитие различных
+                форм.</p>
             </article>
           </li>
-          
+
           <li class="servise-item">
             <article class="service-card">
               <div class="servise-card-img">
@@ -127,10 +141,11 @@
               <h3 class="service-card-title">
                 <a href="#" class="service-card-link">Сауны, бассейны, бани, фитнес-залы</a>
               </h3>
-              <p class="service-card-text">Не следует, однако забывать, что начало повседневной работы по формированию позиции</p>
+              <p class="service-card-text">Не следует, однако забывать, что начало повседневной работы по формированию
+                позиции</p>
             </article>
           </li>
-          
+
           <li class="servise-item">
             <article class="service-card">
               <div class="servise-card-img">
@@ -139,19 +154,22 @@
               <h3 class="service-card-title">
                 <a href="#" class="service-card-link">Охраняемые автомобильные стоянки</a>
               </h3>
-              <p class="service-card-text">Не следует, однако забывать, что начало повседневной работы по формированию позиции</p>
+              <p class="service-card-text">Не следует, однако забывать, что начало повседневной работы по формированию
+                позиции</p>
             </article>
           </li>
         </ul>
-      </section>
-      <!-- /.service -->
+      </div>
+      <!-- /.cintainer -->
+    </section>
+    <!-- /.service -->
 
 
-  
-      
 
 
-    </div>
+
+
+    <!-- </div> -->
     <!-- /.container -->
   </main>
 
