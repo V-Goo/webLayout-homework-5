@@ -56,7 +56,7 @@ ul {
 }
 
 img {
-  min-width: 100%;
+  max-width: 100%;
 }
 
 .visually-hidden {
@@ -91,6 +91,7 @@ img {
 .common-flex {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .common-title {
@@ -315,10 +316,6 @@ img {
 
       /*  *Services */
 
-.service {
-  /* height: 674px; */
-}
-
 .service-lists {
   display: flex;
   flex-wrap: wrap;
@@ -367,6 +364,139 @@ height: 674px;
   line-height: 2;
 }
 
+/*  *Benefits Area */
+
+.benefits {
+}
+
+.title-benefits {
+}
+
+.benefits-lists {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  /* margin-bottom: -24px; */
+}
+
+.benefits-item {
+   margin-bottom: 24px;
+}
+/*  ! Попробовать обойтись без... */
+.benefits-item:nth-child(n+4) {
+  margin-bottom: 0;
+}
+/* ! Переписать на flex-baisis в % */
+.benefits-card {
+  padding-top: 44px;
+  padding-bottom: 40px;
+  padding-left: 44px;
+  max-width: 275px;
+  height: 275px;
+  border-radius: 12px;
+  background-color: #ffffff;
+}
+
+.benefits-card-img {
+  margin-bottom: 10px;
+}
+
+.benefits-img {
+}
+
+.benefits-text {
+  width: 81%;
+  color: #333333;
+  line-height: 2;
+}
+/* End Benefit Area */
+
+/*  *Siting Area */
+
+.siting {
+}
+.siting-title {
+  line-height: 0.87;
+}
+.siting-lists {
+}
+.siting-item {
+  margin-bottom: 25px;
+  flex: 0 0 32%;
+  height: 441px;
+  border-radius: 12px;
+  background-color: #ffffff;
+}
+.siting-card {
+  padding-left: 44px;
+
+}
+.siting-card-img {
+  margin-bottom: 25px;
+  margin-left: -44px;
+}
+.siting-img {
+}
+.siting-apartment {
+}
+.apartment-atributs {
+  line-height: 1.9;
+  color: #333;
+}
+.apartment-price {
+}
+
+.ot {
+  color: #969696;
+}
+.number {
+  font-family: "Muller Bold";
+  font-size: 22px;
+  font-weight: 700;
+}
+.night {
+}
+.apartment-title {
+}
+.apartment-place {
+  color: #999999;
+}
+.apartment-details {
+}
+.apartment-link {
+}
+.apartment-raiting {
+  align-self: center;
+}
+.star-raiting {
+}
+
+.all-variant-card {
+position: relative;
+}
+
+.all-variants {
+}
+.all-variant-title {
+  position: absolute;
+  bottom: 50px;
+color: #ffffff;
+font-family: "Muller Medium";
+font-size: 22px;
+font-weight: 400;
+line-height: 32px;
+padding-right: 19px;
+/* todo Стрелка должна быть белая. Подогнать размеры */
+background-image: url(../img/arrow.png);
+background-repeat: no-repeat;
+background-position: right;
+background-size: 12px;
+
+
+}
+.all-variants-link {
+}
+
 
 
 
@@ -382,3 +512,32 @@ height: 674px;
   line-height: 1.2;
   height: 240px;
 }
+
+
+/* Style for "от 4 698 р" */
+width: 156px;
+height: 84px;
+color: #333333;
+font-family: "Muller Regular";
+font-size: 16px;
+font-weight: 400;
+line-height: 32px;
+/* Text style for "от" */
+color: #969696;
+font-family: "Muller Regular";
+font-weight: 400;
+/* Text style for "" */
+color: #000000;
+font-family: "Muller Regular";
+font-weight: 400;
+/* Text style for "4 698 р" */
+font-family: "Muller Bold";
+font-size: 22px;
+font-weight: 700;
+/* Text style for "/ ночь , L" */
+font-family: "Muller Regular";
+font-weight: 400;
+/* Text style for "Барселона," */
+color: #999999;
+font-family: "Muller Regular";
+font-weight: 400;
