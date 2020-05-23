@@ -56,7 +56,7 @@ ul {
 }
 
 img {
-  min-width: 100%; 
+  min-width: 100%;
 }
 
 .visually-hidden {
@@ -65,8 +65,8 @@ img {
 	clip: rect(1px, 1px, 1px, 1px);
 	padding:0 !important;
 	border:0 !important;
-	height: 1px !important; 
-	width: 1px !important; 
+	height: 1px !important;
+	width: 1px !important;
 	overflow: hidden;
 }
 
@@ -202,10 +202,10 @@ img {
 }
 
 .first-screen-title {
-  
+
 }
 
-/* Form Reservation Section */
+/* * Form Reservation Section */
 
 .flex-block {
   /* display: flex; */
@@ -281,7 +281,7 @@ img {
 }
 
 .special-offer-links {
-  
+
 }
 
 .special-offer-link {
@@ -313,42 +313,72 @@ img {
   line-height: 2;
 }
 
-/* Services */
+      /*  *Services */
 
-.service-list {
+.service {
+  /* height: 674px; */
+}
+
+.service-lists {
   display: flex;
   flex-wrap: wrap;
   /* justify-content: space-between; */
   place-content: space-between;
-
+height: 674px;
 }
 
 .servise-item {
+  /* margin-bottom: 24px; */
   max-width: 572px;
 }
 
 .service-card {
   padding-left: 45px;
+  padding-bottom: 33px;
   border-radius: 12px;
   background-color: #ffffff;
 }
 
 .servise-card-img {
+  margin-bottom: 36px;
   margin-left: -45px;
 }
 
 .service-card-title {
+  margin-bottom: 5px;
   color: #cc9933;
   font-family: "Muller Medium";
   font-size: 22px;
   font-weight: 400;
 
-  line-height: 1.4;
+  line-height: 1;
 }
+
 .service-card-link {
   padding-right: 15px;
   background-image: url(../img/arrow.png);
   background-repeat: no-repeat;
   background-position: right;
-    
+}
+
+.service-card-text {
+  width: 75%;
+  color: #333333;
+  line-height: 2;
+}
+
+
+
+
+/*
+      ! Footer Area
+      todo: Незабыть удалить
+      // Аэто так
+      ? Вот так ещё бывает
+      * Совсем хорошо
+      / И это тоже полезно
+  */
+.footer-plaseholder {
+  line-height: 1.2;
+  height: 240px;
 }
