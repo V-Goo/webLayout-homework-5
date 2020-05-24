@@ -1,6 +1,7 @@
 {
   "editor.fontSize": 16,
-  "editor.fontFamily": "JatBrains Mono",
+  "editor.fontFamily": "Fira Code",
+  // "editor.fontFamily": "JatBrains Mono",
   "editor.fontLigatures": false,
   "better-comments.multilineComments": true
 }

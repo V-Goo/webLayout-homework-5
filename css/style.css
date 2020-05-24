@@ -84,6 +84,8 @@ img {
 
 .common-section {
   margin-bottom: 70px;
+  /* margin-top: 70px; */
+  /* margin-bottom: -25px; */
 
   outline: 1px solid cadetblue;
 }
@@ -120,6 +122,7 @@ img {
 /* Header Area */
 
 .header {
+  /* margin-bottom: 70px; */
 }
 
 .header-top {
@@ -127,7 +130,6 @@ img {
   align-items: center;
   margin-bottom: 30px;
   padding-top: 30px;
-
 }
 
 .phone-top {
@@ -189,6 +191,9 @@ img {
   background-size: 22px;
   background-position: 93%;
 }
+.header-search-input::placeholder {
+  padding-left: 15px;
+}
 
 /* Main */
 
@@ -213,6 +218,7 @@ img {
   flex-direction: column;
   align-content: space-between;
   justify-content: space-between;
+  height: 540px;
 }
 
 .reservation-item {
@@ -222,7 +228,9 @@ img {
   border-radius: 12px;
   background-color: #ffffff;
 }
-
+.reservation-item::placeholder {
+  padding-left: 15px;
+}
 .btn-number {
   display: flex;
   align-content: center;
@@ -262,7 +270,6 @@ img {
   font-family: "Muller Bold";
   font-size: 66px;
   font-weight: 400;
-
   line-height: 0.87;
 }
 
@@ -276,17 +283,13 @@ img {
   opacity: 0.49;
   color: #fff;
   font-size: 35px;
-
   line-height: 0.8;
-
 }
 
 .special-offer-links {
-
 }
 
 .special-offer-link {
-  /* padding: 15px; */
   color: #fc6;
 
   line-height: 2.6;
@@ -295,15 +298,12 @@ img {
   background-image: url(../img/arrow.svg);
   background-repeat: no-repeat;
   background-position: right;
-
-  /* background-image: url(../img/arrow.svg) */
-  /* background-repeat: no-repeat; */
-  /* background-position: right; */
 }
 
 /* About */
 
 .about {
+  /* margin-top: 70px; */
   margin-bottom: 53px;
 }
 
@@ -315,22 +315,24 @@ img {
   padding-left: 43px;
   width: 930px;
   color: #666666;
-
   line-height: 2;
 }
 
       /*  *Services */
 
+.service {
+  /* margin-bottom: -25px; */
+}
 .service-lists {
   display: flex;
   flex-wrap: wrap;
   /* justify-content: space-between; */
   place-content: space-between;
-height: 674px;
+/* height: 674px; */
 }
 
 .servise-item {
-  /* margin-bottom: 24px; */
+  margin-bottom: 25px;
   max-width: 572px;
 }
 
@@ -372,6 +374,7 @@ height: 674px;
 /*  *Benefits Area */
 
 .benefits {
+  margin-top: -25px;
 }
 
 .title-benefits {
@@ -388,9 +391,9 @@ height: 674px;
    margin-bottom: 24px;
 }
 /*  ! Попробовать обойтись без... */
-.benefits-item:nth-child(n+4) {
-  margin-bottom: 0;
-}
+/* .benefits-item:nth-child(n+4) { */
+  /* margin-bottom: 0; */
+/* } */
 /* ! Переписать на flex-baisis в % */
 .benefits-card {
   padding-top: 44px;
@@ -419,11 +422,16 @@ height: 674px;
 /*  *Siting Area */
 
 .siting {
+  margin-top: -25px;
 }
 .siting-title {
   line-height: 0.87;
 }
 .siting-lists {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap:  wrap;
+
 }
 .siting-item {
   margin-bottom: 25px;
@@ -448,7 +456,24 @@ height: 674px;
   line-height: 1.9;
   color: #333;
 }
+.price-and-raiting {
+  display: flex;
+}
 .apartment-price {
+}
+
+.apartment-rating-lists {
+  display: flex;
+  /* justify-content:  flex-start;; */
+  place-content:  center;
+  flex: 1 0 auto;
+  align-self: flex-end;
+  /* padding-left: 40px; */
+}
+.apartment-rating-item {
+  padding-right: 6px;
+}
+.star-raiting {
 }
 
 .ot {
@@ -468,26 +493,13 @@ height: 674px;
   color: #999999;
 }
 .apartment-details {
-  /* padding: 5px 10px 3px 21px; */
-
-  /* color: #cc9933; */
-  /* font-family: "Muller Bold"; */
-  /* font-size: 16px; */
-  /* font-weight: 400; */
-  /* line-height: 2; */
-  /* border-radius: 12px; */
-  /* border: 1px solid #cc9933; */
 }
 .apartment-link {
   padding: 12px 19px 11px;
   color: #cc9933;
   background-color: transparent;
 }
-.apartment-raiting {
-  align-self: center;
-}
-.star-raiting {
-}
+
 
 .all-variant-card {
 position: relative;
@@ -497,19 +509,18 @@ position: relative;
 }
 .all-variant-title {
   position: absolute;
-  bottom: 50px;
-color: #ffffff;
-font-family: "Muller Medium";
-font-size: 22px;
-font-weight: 400;
-line-height: 32px;
-padding-right: 19px;
-background-image: url(../img/arrow-w.svg);
-background-repeat: no-repeat;
-background-position: right;
-background-size: 12px;
-
-
+  bottom: 47px;
+  left: 39px;
+  color: #ffffff;
+  font-family: "Muller Medium";
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 1.45;
+  padding-right: 21px;
+  background-image: url(../img/arrow-w.svg);
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: 12px;
 }
 .all-variants-link {
 }
@@ -525,6 +536,9 @@ background-size: 12px;
       * Совсем хорошо
       / И это тоже полезно
   */
+  .footer {
+    margin-top: 70px;
+  }
 .footer-plaseholder {
   line-height: 1.2;
   height: 240px;
