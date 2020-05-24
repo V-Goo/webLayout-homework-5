@@ -31,10 +31,10 @@
 * {
   margin: 0;
   padding: 0;
-  margin-block-start: 0;
-  margin-block-end: 0;
-  margin-inline-start: 0;
-  margin-inline-end: 0;
+  /* margin-block-start: 0; */
+  /* margin-block-end: 0; */
+  /* margin-inline-start: 0; */
+  /* margin-inline-end: 0; */
   box-sizing: border-box;
 }
 
@@ -57,13 +57,11 @@ ul {
 
 img {
   max-width: 100%;
-  /* object-fit: fill; */
-  overflow: hidden;
 }
 
 .visually-hidden {
 	position: absolute !important;
-	clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+	clip: rect(1px, 1px, 1px, 1px); /* IE6, IE7 */
 	clip: rect(1px, 1px, 1px, 1px);
 	padding:0 !important;
 	border:0 !important;
@@ -97,7 +95,6 @@ img {
 }
 
 .btn {
-  border: 1px solid #cc9933;
   border-radius: 12px;
   background-color: #cc9933;
   color: #ffffff;
@@ -498,6 +495,8 @@ img {
   padding: 12px 19px 11px;
   color: #cc9933;
   background-color: transparent;
+  border: 1px solid #cc9933;
+
 }
 
 .all-variant-card {
@@ -530,7 +529,6 @@ img {
 /*  * Contacts Area */
 .contacts {
   margin-top: 45px;
-  outline: 1px solid aqua;
 }
 .contacts-lists {
   display: flex;
