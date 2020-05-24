@@ -57,6 +57,8 @@ ul {
 
 img {
   max-width: 100%;
+  /* object-fit: fill; */
+  overflow: hidden;
 }
 
 .visually-hidden {
@@ -238,6 +240,10 @@ img {
 
 /* Special Offer Article */
 
+.special-img {
+  border-radius: 12px;
+}
+
 .offer-position {
   position: relative;
 }
@@ -327,6 +333,10 @@ img {
 .servise-card-img {
   margin-bottom: 36px;
   margin-left: -45px;
+}
+
+.card-img {
+  border-radius: 12px 12px 0 0;
 }
 
 .service-card-title {
@@ -428,6 +438,7 @@ img {
 }
 
 .siting-img {
+  border-radius: 12px 12px 0 0;
 }
 
 .siting-apartment {
@@ -496,6 +507,10 @@ img {
 .all-variants {
 }
 
+.all-siting-img {
+  border-radius: 12px;
+}
+
 .all-variant-title {
   position: absolute;
   bottom: 47px;
@@ -510,5 +525,36 @@ img {
   background-repeat: no-repeat;
   background-position: right;
   background-size: 12px;
+}
+
+/*  * Contacts Area */
+.contacts {
+  margin-top: 45px;
+  outline: 1px solid aqua;
+}
+.contacts-lists {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  height: 620px;
+  border-radius: 12px;
+  background-color: #ffffff;
+}
+
+.contacts-item {
+  line-height: 2;
+}
+
+/* * Footer Area */
+
+.footer-content {
+  height: 340px;
+  border-radius: 12px;
+  background-color: #333333;
+}
+
+.footer-logo-img {
+  display: block;
+  margin: 0 auto;
 }
 
