@@ -78,22 +78,11 @@ img {
 .container {
   margin: 0 auto;
   max-width: 1170px;
-  outline: 2px solid orangered;
 }
 
 
 .common-section {
   margin-bottom: 70px;
-  /* margin-top: 70px; */
-  /* margin-bottom: -25px; */
-
-  outline: 1px solid cadetblue;
-}
-
-.common-flex {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
 }
 
 .common-title {
@@ -103,8 +92,6 @@ img {
   font-weight: 400;
   line-height: 1;
   color: #333333;
-
-  outline: 1px solid brown;
 }
 
 .btn {
@@ -119,10 +106,9 @@ img {
 /* End Common Area */
 
 
-/* Header Area */
+/* *Header Area */
 
 .header {
-  /* margin-bottom: 70px; */
 }
 
 .header-top {
@@ -143,7 +129,7 @@ img {
   margin-left: auto;
   padding-right: 10px;
   padding-left: 20px;
-  background-image: url(../img/arrow-circle.png);
+  background-image: url(../img/arrow-circle-right-solid.svg);
   background-size: 16px;
   background-repeat: no-repeat;
   background-position: left;
@@ -153,7 +139,7 @@ img {
   line-height: 1.4;
 }
 
-/* NavBar */
+/* *NavBar */
 
 .header-nav {
   display: flex;
@@ -197,24 +183,24 @@ img {
 
 /* Main */
 
-/* First Screen */
+/* * First Screen */
 
 .first-screen {
-
 }
 
 .first-screen-flex {
-
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .first-screen-title {
-
 }
 
 /* * Form Reservation Section */
 
 .flex-block {
-  /* display: flex; */
+  display: flex;
   flex-direction: column;
   align-content: space-between;
   justify-content: space-between;
@@ -291,9 +277,7 @@ img {
 
 .special-offer-link {
   color: #fc6;
-
   line-height: 2.6;
-
   padding-right: 15px;
   background-image: url(../img/arrow.svg);
   background-repeat: no-repeat;
@@ -303,7 +287,6 @@ img {
 /* About */
 
 .about {
-  /* margin-top: 70px; */
   margin-bottom: 53px;
 }
 
@@ -326,9 +309,7 @@ img {
 .service-lists {
   display: flex;
   flex-wrap: wrap;
-  /* justify-content: space-between; */
   place-content: space-between;
-/* height: 674px; */
 }
 
 .servise-item {
@@ -354,7 +335,6 @@ img {
   font-family: "Muller Medium";
   font-size: 22px;
   font-weight: 400;
-
   line-height: 1;
 }
 
@@ -384,17 +364,12 @@ img {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  /* margin-bottom: -24px; */
 }
 
 .benefits-item {
    margin-bottom: 24px;
 }
-/*  ! Попробовать обойтись без... */
-/* .benefits-item:nth-child(n+4) { */
-  /* margin-bottom: 0; */
-/* } */
-/* ! Переписать на flex-baisis в % */
+
 .benefits-card {
   padding-top: 44px;
   padding-bottom: 40px;
@@ -424,15 +399,17 @@ img {
 .siting {
   margin-top: -25px;
 }
+
 .siting-title {
   line-height: 0.87;
 }
+
 .siting-lists {
   display: flex;
   justify-content: space-between;
   flex-wrap:  wrap;
-
 }
+
 .siting-item {
   margin-bottom: 25px;
   flex: 0 0 32%;
@@ -440,73 +417,85 @@ img {
   border-radius: 12px;
   background-color: #ffffff;
 }
+
 .siting-card {
   padding-left: 44px;
-
 }
+
 .siting-card-img {
   margin-bottom: 25px;
   margin-left: -44px;
 }
+
 .siting-img {
 }
+
 .siting-apartment {
 }
+
 .apartment-atributs {
   line-height: 1.9;
   color: #333;
 }
+
 .price-and-raiting {
   display: flex;
 }
+
 .apartment-price {
 }
 
 .apartment-rating-lists {
   display: flex;
-  /* justify-content:  flex-start;; */
   place-content:  center;
   flex: 1 0 auto;
   align-self: flex-end;
-  /* padding-left: 40px; */
 }
+
 .apartment-rating-item {
   padding-right: 6px;
 }
+
 .star-raiting {
 }
 
 .ot {
   color: #969696;
 }
+
 .number {
   font-family: "Muller Bold";
   font-size: 22px;
   font-weight: 700;
 }
+
 .night {
 }
+
 .apartment-title {
 }
+
 .apartment-place {
   margin-bottom: 20px;
   color: #999999;
 }
+
 .apartment-details {
 }
+
 .apartment-link {
   padding: 12px 19px 11px;
   color: #cc9933;
   background-color: transparent;
 }
 
-
 .all-variant-card {
-position: relative;
+  position: relative;
 }
 
 .all-variants {
 }
+
 .all-variant-title {
   position: absolute;
   bottom: 47px;
@@ -521,26 +510,5 @@ position: relative;
   background-repeat: no-repeat;
   background-position: right;
   background-size: 12px;
-}
-.all-variants-link {
-}
-
-
-
-
-/*
-      ! Footer Area
-      todo: Незабыть удалить
-      // Аэто так
-      ? Вот так ещё бывает
-      * Совсем хорошо
-      / И это тоже полезно
-  */
-  .footer {
-    margin-top: 70px;
-  }
-.footer-plaseholder {
-  line-height: 1.2;
-  height: 240px;
 }
 
