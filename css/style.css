@@ -1,28 +1,30 @@
 @font-face {
-	font-family: 'Muller Regular';
-	src: url('../fonts/MullerRegular.woff2') format('woff2'),
-		url('../fonts/MullerRegular.woff') format('woff');
-	font-display: swap;
-	font-weight: 400;
-	font-style: normal;
+  src: url("../fonts/MullerRegular.woff2") format("woff2");
+  src: url("../fonts/MullerRegular.woff") format("woff");
+  font-family: "Muller Regular";
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
-	font-family: 'Muller Bold';
-	src: url('../fonts/MullerBold.woff2') format('woff2'),
-		url('../fonts/MullerBold.woff') format('woff');
-	font-display: swap;
-	font-weight: 800;
-	font-style: normal;
+  src:
+    url("../fonts/MullerBold.woff2") format("woff2"),
+    url("../fonts/MullerBold.woff") format("woff");
+  font-family: "Muller Bold";
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
-	font-family: 'Muller Medium';
-	src: url('../fonts/MullerMedium.woff2') format('woff2'),
-		url('../fonts/MullerMedium.woff') format('woff');
-	font-display: swap;
-	font-weight: 500;
-	font-style: normal;
+  src:
+    url("../fonts/MullerMedium.woff2") format("woff2"),
+    url("../fonts/MullerMedium.woff") format("woff");
+  font-family: "Muller Medium";
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
 }
 
 
@@ -36,7 +38,7 @@
 
 html,
 body {
-  font-family: 'Muller Regular', sans-serif;
+  font-family: "Muller Regular", sans-serif;
   font-size: 16px;
   line-height: 0;
   background-color: #f1f1f1;
@@ -56,14 +58,13 @@ img {
 }
 
 .visually-hidden {
-	position: absolute !important;
-	clip: rect(1px, 1px, 1px, 1px); /* IE6, IE7 */
-	clip: rect(1px, 1px, 1px, 1px);
-	padding:0 !important;
-	border:0 !important;
-	height: 1px !important;
-	width: 1px !important;
-	overflow: hidden;
+  position: absolute !important;
+  overflow: hidden;
+  border: 0 !important;
+  padding: 0 !important;
+  width: 1px !important;
+  height: 1px !important;
+  clip: rect(1px, 1px, 1px, 1px);
 }
 
 /* End Drop Style Area */
@@ -76,28 +77,28 @@ img {
   max-width: 1170px;
 }
 
-
 .common-section {
   margin-bottom: 70px;
 }
 
 .common-title {
-  margin-left: 43px;
   margin-bottom: 23px;
-  font-size: 40px;
+  margin-left: 43px;
   font-weight: 400;
+  font-size: 40px;
   line-height: 1;
-  color: #333333;
+  color: #333;
 }
 
 .btn {
   border-radius: 12px;
-  background-color: #cc9933;
-  color: #ffffff;
-  font-family: "Muller Bold";
+  font-family: "Muller Bold", "Arial Bold", sans-serif;
+  font-weight: 800;
   font-size: 16px;
-  font-weight: 400;
+  color: #fff;
+  background-color: #c93;
 }
+
 /* End Common Area */
 
 
@@ -115,35 +116,36 @@ img {
 
 .phone-top {
   margin-left: 25px;
+  font-family: "Muller Bold", "Arial Bold", sans-serif;
+  font-weight: 800;
   font-size: 22px;
-  font-family: 'Muller Bold';
   color: #666;
 }
+
 .accaunt-top::before {
-  font-family: 'Font Awesome 5 Free';
-  content: '\f0a9';
+  content: "\f0a9";
   padding-right: 3px;
+  font-family: "Font Awesome 5 Free";
 }
+
 .accaunt-top {
   margin-left: auto;
   padding-right: 10px;
   padding-left: 20px;
-  font-family: 'Muller Bold';
-  color: #c93;
-
+  font-family: "Muller Bold", sans-serif;
+  font-weight: 800;
   line-height: 1.4;
+  color: #c93;
 }
-
-
 
 /* *NavBar */
 
 .header-nav {
   display: flex;
+  border-radius: 12px;
   padding-top: 11px;
   padding-right: 20px;
   padding-bottom: 11px;
-  border-radius: 12px;
   background-color: #fff;
 }
 
@@ -154,26 +156,27 @@ img {
 
 .nav-list__item {
   margin: 0 23px;
-  color: #333333;
+  color: #333;
 }
 
 .header-search {
-  margin-left: auto;
   align-self: center;
+  margin-left: auto;
 }
 
 .header-search-input {
+  border: none;
+  border-radius: 15px;
   padding: 0;
   width: 355px;
   height: 48px;
-  border: none;
-  border-radius: 15px;
-  background-color: #f1f1f1;
-  background-image: url(../img/search.png);
-  background-repeat: no-repeat;
-  background-size: 22px;
+  background-image: url("../img/search.png");
   background-position: 93%;
+  background-size: 22px;
+  background-repeat: no-repeat;
+  background-color: #f1f1f1;
 }
+
 .header-search-input::placeholder {
   padding-left: 15px;
 }
@@ -187,8 +190,8 @@ img {
 
 .first-screen-flex {
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .first-screen-title {
@@ -205,32 +208,34 @@ img {
 }
 
 .reservation-item {
-  width: 518px;
-  height: 70px;
   border: none;
   border-radius: 12px;
-  background-color: #ffffff;
+  width: 518px;
+  height: 70px;
+  background-color: #fff;
 }
+
 .reservation-item::placeholder {
   padding-left: 15px;
 }
+
 .btn-number {
   display: flex;
   align-content: center;
 }
 
 .reservation-btn {
-  padding: 27px 30px;
   border: none;
+  padding: 27px 30px;
 }
 
 .reservation-available {
-  margin-left: 30px;
   align-self: center;
+  margin-left: 30px;
 }
 
 .numder-item {
-  color: #cc9933;
+  color: #c93;
 }
 
 /* Special Offer Article */
@@ -245,19 +250,19 @@ img {
 
 .special-offer-text {
   position: absolute;
-  top: 265px;
   left: 40px;
+  top: 265px;
   width: 320px;
 }
 
 .text-main {
-  padding: 0;
   margin: 0 0 35px;
-  color: #fff;
-  font-family: "Muller Bold";
+  padding: 0;
+  font-family: "Muller Bold", sans-serif;
+  font-weight: 800;
   font-size: 66px;
-  font-weight: 400;
   line-height: 0.87;
+  color: #fff;
 }
 
 .flex-wrapper {
@@ -267,22 +272,22 @@ img {
 
 .text-price {
   margin: 0;
-  opacity: 0.49;
-  color: #fff;
   font-size: 35px;
   line-height: 0.8;
+  color: #fff;
+  opacity: 0.49;
 }
 
 .special-offer-links {
 }
 
 .special-offer-link {
-  color: #fc6;
-  line-height: 2.6;
   padding-right: 15px;
-  background-image: url(../img/arrow.svg);
-  background-repeat: no-repeat;
+  line-height: 2.6;
+  color: #fc6;
+  background-image: url("../img/arrow.svg");
   background-position: right;
+  background-repeat: no-repeat;
 }
 
 /* About */
@@ -298,15 +303,16 @@ img {
 .about-text {
   padding-left: 43px;
   width: 930px;
-  color: #666666;
   line-height: 2;
+  color: #666;
 }
 
-      /*  *Services */
+/*  *Services */
 
 .service {
   /* margin-bottom: -25px; */
 }
+
 .service-lists {
   display: flex;
   flex-wrap: wrap;
@@ -319,10 +325,10 @@ img {
 }
 
 .service-card {
-  padding-left: 45px;
-  padding-bottom: 33px;
   border-radius: 12px;
-  background-color: #ffffff;
+  padding-bottom: 33px;
+  padding-left: 45px;
+  background-color: #fff;
 }
 
 .servise-card-img {
@@ -336,24 +342,24 @@ img {
 
 .service-card-title {
   margin-bottom: 5px;
-  color: #cc9933;
-  font-family: "Muller Medium";
+  font-family: "Muller Medium", sans-serif;
+  font-weight: 500;
   font-size: 22px;
-  font-weight: 400;
   line-height: 1;
+  color: #c93;
 }
 
 .service-card-link {
   padding-right: 15px;
-  background-image: url(../img/arrow.svg);
-  background-repeat: no-repeat;
+  background-image: url("../img/arrow.svg");
   background-position: right;
+  background-repeat: no-repeat;
 }
 
 .service-card-text {
   width: 75%;
-  color: #333333;
   line-height: 2;
+  color: #333;
 }
 
 /*  *Benefits Area */
@@ -367,22 +373,22 @@ img {
 
 .benefits-lists {
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .benefits-item {
-   margin-bottom: 24px;
+  margin-bottom: 24px;
 }
 
 .benefits-card {
+  border-radius: 12px;
   padding-top: 44px;
   padding-bottom: 40px;
   padding-left: 44px;
-  max-width: 275px;
   height: 275px;
-  border-radius: 12px;
-  background-color: #ffffff;
+  max-width: 275px;
+  background-color: #fff;
 }
 
 .benefits-card-img {
@@ -394,9 +400,10 @@ img {
 
 .benefits-text {
   width: 81%;
-  color: #333333;
   line-height: 2;
+  color: #333;
 }
+
 /* End Benefit Area */
 
 /*  *Siting Area */
@@ -411,16 +418,16 @@ img {
 
 .siting-lists {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
-  flex-wrap:  wrap;
 }
 
 .siting-item {
-  margin-bottom: 25px;
   flex: 0 0 32%;
-  height: 441px;
+  margin-bottom: 25px;
   border-radius: 12px;
-  background-color: #ffffff;
+  height: 441px;
+  background-color: #fff;
 }
 
 .siting-card {
@@ -453,8 +460,8 @@ img {
 
 .apartment-rating-lists {
   display: flex;
-  place-content:  center;
   flex: 1 0 auto;
+  place-content: center;
   align-self: flex-end;
 }
 
@@ -470,9 +477,9 @@ img {
 }
 
 .number {
-  font-family: "Muller Bold";
+  font-family: "Muller Bold", sans-serif;
+  font-weight: 800;
   font-size: 22px;
-  font-weight: 700;
 }
 
 .night {
@@ -483,18 +490,17 @@ img {
 
 .apartment-place {
   margin-bottom: 20px;
-  color: #999999;
+  color: #999;
 }
 
 .apartment-details {
 }
 
 .apartment-link {
+  border: 1px solid #c93;
   padding: 12px 19px 11px;
-  color: #cc9933;
+  color: #c93;
   background-color: transparent;
-  border: 1px solid #cc9933;
-
 }
 
 .all-variant-card {
@@ -510,31 +516,32 @@ img {
 
 .all-variant-title {
   position: absolute;
-  bottom: 47px;
   left: 39px;
-  color: #ffffff;
-  font-family: "Muller Medium";
-  font-size: 22px;
-  font-weight: 400;
-  line-height: 1.45;
+  bottom: 47px;
   padding-right: 21px;
-  background-image: url(../img/arrow-w.svg);
-  background-repeat: no-repeat;
+  font-family: "Muller Medium", sans-serif;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 1.45;
+  color: #fff;
+  background-image: url("../img/arrow-w.svg");
   background-position: right;
   background-size: 12px;
+  background-repeat: no-repeat;
 }
 
 /*  * Contacts Area */
 .contacts {
   margin-top: 45px;
 }
+
 .contacts-lists {
   display: flex;
   flex-direction: column;
+  border-radius: 12px;
   width: 40%;
   height: 620px;
-  border-radius: 12px;
-  background-color: #ffffff;
+  background-color: #fff;
 }
 
 .contacts-item {
@@ -544,13 +551,12 @@ img {
 /* * Footer Area */
 
 .footer-content {
-  height: 340px;
   border-radius: 12px;
-  background-color: #333333;
+  height: 340px;
+  background-color: #333;
 }
 
 .footer-logo-img {
   display: block;
   margin: 0 auto;
 }
-
