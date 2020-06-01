@@ -1,0 +1,9 @@
+*.zip
+.vscode/
+.DS_Store
+package.json
+package-lock.json
+homeWork.code-workspace
+node_modules/
+.stylelintrc.json
+.htmlhintrc
