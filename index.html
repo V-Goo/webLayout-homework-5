@@ -553,24 +553,67 @@
     <!-- /.siting common-section -->
 
 
-    <section class="contacts common-section">
+    <section class="contacts">
       <div class="container">
-      <h2 class="contacts-title common-title">Контакты</h2>
-      <ul class="contacts-lists">
-        <li class="contacts-item">Адрес</li>
-        <li class="contacts-item">Телефоны</li>
-        <li class="contacts-item">E-mail</li>
-        <li class="contacts-item">График</li>
-        <li class="contacts-item">Построить маршрут</li>
-      </ul>
-    </div>
+        <div class="contact-row">
+          <section class="section-contact">
+            <h2 class="contacts-title common-title">Контакты</h2>
+            <ul class="contacts-lists">
+              <li class="contacts-item"><span class="contact-item__title">Адрес</span>
+                <span class="contact-item__body">
+                  Москва, улица Юности, дом 5 строение 4, офис 2
+                </span></li>
+              <li class="contacts-item"><span class="contact-item__title">Телефоны</span>
+                <span class="contact-item__body">
+                  <a class="contact-tel" href="tel:+74995356434">+7 (499) 535-64-34</a>
+                  <a class="contact-tel" href="tel:+74950050544">+7 (495) 005-05-44</a>
+                </span></li>
+              <li class="contacts-item"><span class="contact-item__title">E-mail</span><span
+                  class="contact-item__body"><a href="mailto:lg.oona@mail.ru">lg.oona@mail.ru</a> по вопросам
+                  бронирования <a href="mailto:hotels.ln@mail.ru">hotels.ln@mail.ru</a> по вопросам
+                  сотрудничества</span></li>
+              <li class="contacts-item"><span class="contact-item__title">График</span> <span
+                  class="contact-item__body">
+                  <p>
+                    Понедельник - пятница,
+                  </p>
+                  <p>
+                    с 10:0 до 19:00
+                  </p>
+                </span></li>
+              <li class="contacts-item"><a href="#" class="btn btn-route">Построить маршрут</a></li>
+            </ul>
+          </section>
+          <!-- /.section-contact -->
+          <section class="section-feedback">
+            <div class="feedback">
+              <h2 class="contacts-title common-title">Напишите нам</h2>
+              <form action="" class="form-feedback">
+                <div class="feedback-form">
+                  <input type="text" class="feedback-input" placeholder="Имя">
+                  <input type="text" class="feedback-input" placeholder="+7">
+                  <textarea class="feedback-input feedback-input--textarea" name="fidback-text" id="feedback-text-id" cols="30" rows="10" placeholder="Сообщение..."></textarea>
+                  <button class="btn btn-feedback">Отправить</button>
+                </div>
+                <!-- /.feedback-form -->
+              </form>
+              <!-- /.form-feedback -->
+
+            </div>
+            <!-- /.feedback -->
+          </section>
+          <!-- /.section-feedback -->
+        </div>
+        <!-- /.contact-row -->
+      </div>
+      <!-- /.container -->
     </section>
   </main>
   <footer class="footer">
     <div class="container">
       <div class="footer-content">
-      <img src="img/sun.png" alt="солнышко" class="footer-logo-img">
-    </div>
+        <img src="img/sun.png" alt="солнышко" class="footer-logo-img">
+      </div>
     </div>
   </footer>
 </body>

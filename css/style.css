@@ -233,6 +233,7 @@ img {
 .reservation-available {
   align-self: center;
   margin-left: 30px;
+  color: #a0a0a0;
 }
 
 .numder-item {
@@ -532,32 +533,145 @@ img {
 }
 
 /*  * Contacts Area */
+
 .contacts {
-  margin-top: 45px;
+  /* margin-top: 45px; */
+  padding-top: 40px;
+  /* ! */
+  height: 724px;
+  /* background-color: rgba(0, 0, 0, 0.05) */
 }
 
+.contact-row{
+  display: flex;
+}
+
+/* * Contact Section */
+
+.section-contact {
+  flex: 0 0 40.3%;
+}
 .contacts-lists {
   display: flex;
   flex-direction: column;
+
+  padding: 20px 45px;
+
   border-radius: 12px;
-  width: 40%;
-  height: 620px;
+  /* width: 40.3%; */
+  /* height: 620px; */
   background-color: #fff;
 }
 
 .contacts-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding-top: 16px;
+  padding-bottom: 21px;
+  border-bottom: 1px solid #ccc;
+}
+
+.contacts-item:last-child {
+
+  border-bottom: none;
+}
+
+.contact-item__title {
+ font-size: 22px;
   line-height: 2;
+  color: #666;
+}
+.contact-item__body {
+  flex: 0 0 62%;
+color: #333333;
+font-size: 16px;
+line-height: 1.5;
+/* white-space: pre-wrap; */
+}
+.contact-item__body a {
+  color: #c93;
+}
+
+.contact-tel {
+  display: block;
+}
+
+.btn-route {
+ margin-top: 28px;
+  border: 1px solid #c93;
+  padding: 18px 29px;
+  font-size: 16px;
+  line-height: 2;
+  color: #c93;
+  background-color: transparent;
+}
+
+/* * Secton Feedback */
+
+.section-feedback {
+  flex: 0 0 59.7%;
+  /* background-color: pink; */
+}
+
+.feedback {
+  margin: 0 auto;
+  padding: 135px 176px 0;
+  /* background-color: orange; */
+}
+
+.feedback h2 {
+  margin: 0 0 37px 0;
+  text-align: center;
+}
+
+.feedback-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.feedback-input {
+  margin-bottom: 23px;
+width: 338px;
+height: 70px;
+border: none;
+border-radius: 12px;
+background-color: #ffffff;
+}
+.feedback-input::placeholder {
+padding-left: 25px;
+}
+.feedback-input--textarea {
+  height: 110px;
+}
+.feedback-input--textarea::placeholder {
+  padding-top: 15px;
+}
+
+.btn-feedback {
+  padding: 26px 0 25px;
+  background-color: #c93;
+  /* border-color: #c93; */
+  border: none;
 }
 
 /* * Footer Area */
 
+.footer {
+  padding-top: 20px;
+}
+
 .footer-content {
+  position: relative;
   border-radius: 12px;
   height: 340px;
   background-color: #333;
 }
 
 .footer-logo-img {
-  display: block;
-  margin: 0 auto;
+  position: absolute;
+  bottom: 0;
+  left: 63%;
+  /* display: block; */
+  /* margin: 0 auto; */
 }
