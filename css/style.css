@@ -535,11 +535,7 @@ img {
 /*  * Contacts Area */
 
 .contacts {
-  /* margin-top: 45px; */
   padding-top: 40px;
-  /* ! */
-  height: 724px;
-  /* background-color: rgba(0, 0, 0, 0.05) */
 }
 
 .contact-row{
@@ -551,16 +547,13 @@ img {
 .section-contact {
   flex: 0 0 40.3%;
 }
+
 .contacts-lists {
   display: flex;
   flex-direction: column;
-
   padding: 20px 45px;
-
-  border-radius: 12px;
-  /* width: 40.3%; */
-  /* height: 620px; */
   background-color: #fff;
+  border-radius: 12px;
 }
 
 .contacts-item {
@@ -573,7 +566,6 @@ img {
 }
 
 .contacts-item:last-child {
-
   border-bottom: none;
 }
 
@@ -582,13 +574,15 @@ img {
   line-height: 2;
   color: #666;
 }
+
 .contact-item__body {
+  display: block;
   flex: 0 0 62%;
-color: #333333;
-font-size: 16px;
-line-height: 1.5;
-/* white-space: pre-wrap; */
+  color: #333333;
+  font-size: 16px;
+  line-height: 1.5;
 }
+
 .contact-item__body a {
   color: #c93;
 }
@@ -611,12 +605,11 @@ line-height: 1.5;
 
 .section-feedback {
   flex: 0 0 59.7%;
-  /* background-color: pink; */
 }
 
 .feedback {
-  margin: 0 auto;
-  padding: 135px 176px 0;
+  /* margin: 0 auto; */
+  padding: 135px 180px 0;
   /* background-color: orange; */
 }
 
@@ -632,18 +625,20 @@ line-height: 1.5;
 
 .feedback-input {
   margin-bottom: 23px;
-width: 338px;
-height: 70px;
-border: none;
-border-radius: 12px;
-background-color: #ffffff;
+  height: 70px;
+  background-color: #ffffff;
+  border: none;
+  border-radius: 12px;
 }
+
 .feedback-input::placeholder {
-padding-left: 25px;
+padding-left: 20px;
 }
+
 .feedback-input--textarea {
   height: 110px;
 }
+
 .feedback-input--textarea::placeholder {
   padding-top: 15px;
 }
@@ -651,27 +646,67 @@ padding-left: 25px;
 .btn-feedback {
   padding: 26px 0 25px;
   background-color: #c93;
-  /* border-color: #c93; */
   border: none;
 }
 
 /* * Footer Area */
 
 .footer {
-  padding-top: 20px;
+  padding-top: 25px;
+  color: #ffffff;
+  line-height: 2;
 }
 
 .footer-content {
+  display: flex;
+  flex-wrap: wrap;
   position: relative;
-  border-radius: 12px;
+  padding: 42px 52px 0;
   height: 340px;
   background-color: #333;
+  border-radius: 12px;
 }
 
 .footer-logo-img {
   position: absolute;
   bottom: 0;
   left: 63%;
-  /* display: block; */
-  /* margin: 0 auto; */
+}
+
+.footer-left {
+  flex: 0 0 30%;
+}
+
+.footer-left--item {
+  margin-bottom: 32px;
+}
+
+.footer-left--link {
+  color: #c93;
+}
+
+.footer-center {
+  flex: 0 0 39%;
+  margin: 0 auto;
+}
+
+.footer-link {
+  margin-top: 25px;
+  color: #c93;
+  line-height: 1.6;
+}
+.footer-link > a {
+  display: block;
+}
+.footer-right {
+  margin-left:  auto;
+  padding-top: 5px;
+}
+
+.footer-social__item {
+  margin-bottom: 10px;
+}
+
+footer-social__item::last-child {
+  margin-bottom: 0;
 }
