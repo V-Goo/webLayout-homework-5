@@ -625,22 +625,28 @@ img {
 
 .feedback-input {
   margin-bottom: 23px;
+  padding-left: 20px;
   height: 70px;
   background-color: #ffffff;
   border: none;
   border-radius: 12px;
 }
 
+/* .feedback-input[type="tel"] {
+  color: #666;
+} */
+
 .feedback-input::placeholder {
-padding-left: 20px;
+/* padding-left: 20px; */
 }
 
 .feedback-input--textarea {
   height: 110px;
+  padding-top: 10px;
 }
 
 .feedback-input--textarea::placeholder {
-  padding-top: 15px;
+  /* padding-top: 15px; */
 }
 
 .btn-feedback {

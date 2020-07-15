@@ -11,7 +11,7 @@
 </head>
 
 <body>
-  
+
   <header class="header common-section">
     <div class="container">
       <div class="header-top">
@@ -46,15 +46,22 @@
         <div class="first-screen-flex">
           <section class="reservation-form section-first">
             <h2 class="common-title">Быстрая бронь</h2>
-            <form action="#" class="form-reservation">
+            <form action="https://my-json-server.typicode.com/v-goo/demo/posts" method="POST" class="form-reservation">
               <div class="flex-block">
-                <div class="input-block"><input type="text" class="reservation-item" placeholder="Город"></div>
-                <div class="input-block"><input type="text" class="reservation-item" placeholder="Категория номера">
+                <div class="input-block">
+                  <input type="text" class="reservation-item" name="place-city" id="name" placeholder="Город">
                 </div>
-                <div class="input-block"><input type="text" class="reservation-item" placeholder="Дата заселения"></div>
-                <div class="input-block"><input type="text" class="reservation-item" placeholder="Количесво ночей">
+                <div class="input-block">
+                  <input type="text" class="reservation-item" name="room-category" placeholder="Категория номера">
                 </div>
-                <div class="input-block"><input type="text" class="reservation-item" placeholder="Количество гостей">
+                <div class="input-block">
+                  <input type="date" class="reservation-item" name="date-siting" placeholder="Дата заселения">
+                </div>
+                <div class="input-block">
+                  <input type="number" class="reservation-item" name="nigth-number" placeholder="Количесво ночей">
+                </div>
+                <div class="input-block">
+                  <input type="number" class="reservation-item" name="guests-number" placeholder="Количество гостей">
                 </div>
                 <div class="btn-number">
                   <button class="reservation-btn btn">Найти номер</button>
@@ -598,11 +605,11 @@
           <section class="section-feedback">
             <div class="feedback">
               <h2 class="contacts-title common-title">Напишите нам</h2>
-              <form action="" class="form-feedback">
+              <form action="https://my-json-server.typicode.com/v-goo/demo/posts" method="POST" class="form-feedback">
                 <div class="feedback-form">
-                  <input type="text" class="feedback-input" placeholder="Имя">
-                  <input type="text" class="feedback-input" placeholder="+7">
-                  <textarea class="feedback-input feedback-input--textarea" name="fidback-text" id="feedback-text-id"
+                  <input type="text" class="feedback-input" name="feedback-name" placeholder="Имя">
+                  <input type="tel" class="feedback-input" name="feedback-phone" placeholder="+7">
+                  <textarea class="feedback-input feedback-input--textarea" name="feedback-text" id="feedback-text-id"
                     cols="30" rows="10" placeholder="Сообщение..."></textarea>
                   <button class="btn btn-feedback">Отправить</button>
                 </div>
