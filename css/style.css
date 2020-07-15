@@ -209,6 +209,7 @@ img {
 }
 
 .reservation-item {
+  padding: 0 15px;
   border: none;
   border-radius: 12px;
   width: 518px;
@@ -216,9 +217,9 @@ img {
   background-color: #fff;
 }
 
-.reservation-item::placeholder {
+/* .reservation-item::placeholder {
   padding-left: 15px;
-}
+} */
 
 .btn-number {
   display: flex;
@@ -636,18 +637,18 @@ img {
   color: #666;
 } */
 
-.feedback-input::placeholder {
+/* .feedback-input::placeholder { */
 /* padding-left: 20px; */
-}
+/* } */
 
 .feedback-input--textarea {
   height: 110px;
   padding-top: 10px;
 }
 
-.feedback-input--textarea::placeholder {
+/* .feedback-input--textarea::placeholder { */
   /* padding-top: 15px; */
-}
+/* } */
 
 .btn-feedback {
   padding: 26px 0 25px;
