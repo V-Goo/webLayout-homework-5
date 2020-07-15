@@ -58,13 +58,14 @@ img {
 }
 
 .visually-hidden {
-  position: absolute !important;
+  position: absolute;
   overflow: hidden;
-  border: 0 !important;
-  padding: 0 !important;
-  width: 1px !important;
-  height: 1px !important;
-  clip: rect(1px, 1px, 1px, 1px);
+  border: 0;
+  margin: -1px;
+  padding: 0;
+  width: 1px;
+  height: 1px;
+  clip: rect(0 0 0 0);
 }
 
 /* End Drop Style Area */
@@ -660,6 +661,7 @@ img {
 
 .footer {
   padding-top: 25px;
+  padding-bottom: 52px;
   color: #ffffff;
   line-height: 2;
 }
