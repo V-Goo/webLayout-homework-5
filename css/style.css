@@ -1,7 +1,7 @@
 @font-face {
   src: url("../fonts/MullerRegular.woff2") format("woff2");
   src: url("../fonts/MullerRegular.woff") format("woff");
-  font-family: "Muller Regular";
+  font-family: "Muller";
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -11,7 +11,7 @@
   src:
     url("../fonts/MullerBold.woff2") format("woff2"),
     url("../fonts/MullerBold.woff") format("woff");
-  font-family: "Muller Bold";
+  font-family: "Muller";
   font-weight: 800;
   font-style: normal;
   font-display: swap;
@@ -21,12 +21,25 @@
   src:
     url("../fonts/MullerMedium.woff2") format("woff2"),
     url("../fonts/MullerMedium.woff") format("woff");
-  font-family: "Muller Medium";
+  font-family: "Muller";
   font-weight: 500;
   font-style: normal;
   font-display: swap;
 }
 
+:root {
+  --color-main: #cc9933;
+  --color-details: #ffcc66;
+  --color-star-gold: #e9ce93;
+  --color-star-dark: #e6e6e6;
+  --color-font: #333333;
+  --color-subtext: #666666;
+  --color-placeholder: #999999;
+  --color-placeholder-search: #bebebe;
+  --color-bg-main: #f1f1f1;
+  --color-bg: #ffffff;
+
+}
 
 /* Drop Syyle Area */
 
@@ -38,10 +51,11 @@
 
 html,
 body {
-  font-family: "Muller Regular", sans-serif;
+  font-family: "Muller", sans-serif;
   font-size: 16px;
+  font-weight: 400;
   line-height: 0;
-  background-color: #f1f1f1;
+  background-color: var(--color-bg-main);
 }
 
 a {
@@ -88,16 +102,16 @@ img {
   font-weight: 400;
   font-size: 40px;
   line-height: 1;
-  color: #333;
+  color: var(--color-font);
 }
 
 .btn {
   border-radius: 12px;
-  font-family: "Muller Bold", "Arial Bold", sans-serif;
+  font-family: "Muller", "Arial Bold", sans-serif;
   font-weight: 800;
   font-size: 16px;
-  color: #fff;
-  background-color: #c93;
+  color: var(--color-bg);
+  background-color: var(--color-main);
 }
 
 /* End Common Area */
@@ -117,10 +131,10 @@ img {
 
 .phone-top {
   margin-left: 25px;
-  font-family: "Muller Bold", "Arial Bold", sans-serif;
+  font-family: "Muller", "Arial Bold", sans-serif;
   font-weight: 800;
   font-size: 22px;
-  color: #666;
+  color: var(--color-subtext);
 }
 
 .accaunt-top::before {
@@ -133,10 +147,10 @@ img {
   margin-left: auto;
   padding-right: 10px;
   padding-left: 20px;
-  font-family: "Muller Bold", sans-serif;
+  font-family: "Muller", sans-serif;
   font-weight: 800;
   line-height: 1.4;
-  color: #c93;
+  color: var(--color-main);
 }
 
 /* *NavBar */
@@ -147,7 +161,7 @@ img {
   padding-top: 11px;
   padding-right: 20px;
   padding-bottom: 11px;
-  background-color: #fff;
+  background-color: var(--color-bg);
 }
 
 .nav-list {
@@ -157,7 +171,7 @@ img {
 
 .nav-list__item {
   margin: 0 23px;
-  color: #333;
+  color: var(--color-font);
 }
 
 .header-search {
@@ -175,11 +189,13 @@ img {
   background-position: 93%;
   background-size: 22px;
   background-repeat: no-repeat;
-  background-color: #f1f1f1;
+  background-color: var(--color-bg-main);
 }
 
 .header-search-input::placeholder {
   padding-left: 15px;
+  font-size: 14px;
+  color: var(--color-placeholder-search)
 }
 
 /* Main */
@@ -215,12 +231,13 @@ img {
   border-radius: 12px;
   width: 518px;
   height: 70px;
-  background-color: #fff;
+  background-color: var(--color-bg);
 }
 
-/* .reservation-item::placeholder {
-  padding-left: 15px;
-} */
+.reservation-item::placeholder {
+  /* padding-left: 15px; */
+  color: var(--color-placeholder)
+}
 
 .btn-number {
   display: flex;
@@ -239,7 +256,7 @@ img {
 }
 
 .numder-item {
-  color: #c93;
+  color: var(--color-main);
 }
 
 /* Special Offer Article */
@@ -262,11 +279,11 @@ img {
 .text-main {
   margin: 0 0 35px;
   padding: 0;
-  font-family: "Muller Bold", sans-serif;
+  font-family: "Muller", sans-serif;
   font-weight: 800;
   font-size: 66px;
   line-height: 0.87;
-  color: #fff;
+  color: var(--color-bg);
 }
 
 .flex-wrapper {
@@ -278,7 +295,7 @@ img {
   margin: 0;
   font-size: 35px;
   line-height: 0.8;
-  color: #fff;
+  color: var(--color-bg);
   opacity: 0.49;
 }
 
@@ -288,7 +305,7 @@ img {
 .special-offer-link {
   padding-right: 15px;
   line-height: 2.6;
-  color: #fc6;
+  color: var(--color-details);
   background-image: url("../img/arrow.svg");
   background-position: right;
   background-repeat: no-repeat;
@@ -308,7 +325,7 @@ img {
   padding-left: 43px;
   width: 930px;
   line-height: 2;
-  color: #666;
+  color: var(--color-subtext);
 }
 
 /*  *Services */
@@ -316,6 +333,11 @@ img {
 .service {
   /* margin-bottom: -25px; */
 }
+
+/* .service-column {
+  margin: 0 auto;
+  max-width: 572px;
+} */
 
 .service-lists {
   display: flex;
@@ -332,7 +354,7 @@ img {
   border-radius: 12px;
   padding-bottom: 33px;
   padding-left: 45px;
-  background-color: #fff;
+  background-color: var(--color-bg);
 }
 
 .servise-card-img {
@@ -346,11 +368,11 @@ img {
 
 .service-card-title {
   margin-bottom: 5px;
-  font-family: "Muller Medium", sans-serif;
+  font-family: "Muller", sans-serif;
   font-weight: 500;
   font-size: 22px;
   line-height: 1;
-  color: #c93;
+  color: var(--color-main);
 }
 
 .service-card-link {
@@ -363,7 +385,7 @@ img {
 .service-card-text {
   width: 75%;
   line-height: 2;
-  color: #333;
+  color: var(--color-font);
 }
 
 /*  *Benefits Area */
@@ -392,7 +414,7 @@ img {
   padding-left: 44px;
   height: 275px;
   max-width: 275px;
-  background-color: #fff;
+  background-color: var(--color-bg);
 }
 
 .benefits-card-img {
@@ -405,7 +427,7 @@ img {
 .benefits-text {
   width: 81%;
   line-height: 2;
-  color: #333;
+  color: var(--color-font);
 }
 
 /* End Benefit Area */
@@ -431,7 +453,7 @@ img {
   margin-bottom: 25px;
   border-radius: 12px;
   height: 441px;
-  background-color: #fff;
+  background-color: var(--color-bg);
 }
 
 .siting-card {
@@ -452,7 +474,7 @@ img {
 
 .apartment-atributs {
   line-height: 1.9;
-  color: #333;
+  color: var(--color-font);
 }
 
 .price-and-raiting {
@@ -481,7 +503,7 @@ img {
 }
 
 .number {
-  font-family: "Muller Bold", sans-serif;
+  font-family: "Muller", sans-serif;
   font-weight: 800;
   font-size: 22px;
 }
@@ -494,16 +516,16 @@ img {
 
 .apartment-place {
   margin-bottom: 20px;
-  color: #999;
+  color: var(--color-placeholder);
 }
 
 .apartment-details {
 }
 
 .apartment-link {
-  border: 1px solid #c93;
+  border: 1px solid var(--color-main);
   padding: 12px 19px 11px;
-  color: #c93;
+  color: var(--color-main);
   background-color: transparent;
 }
 
@@ -523,11 +545,11 @@ img {
   left: 39px;
   bottom: 47px;
   padding-right: 21px;
-  font-family: "Muller Medium", sans-serif;
+  font-family: "Muller", sans-serif;
   font-weight: 500;
   font-size: 22px;
   line-height: 1.45;
-  color: #fff;
+  color: var(--color-bg);
   background-image: url("../img/arrow-w.svg");
   background-position: right;
   background-size: 12px;
@@ -554,7 +576,7 @@ img {
   display: flex;
   flex-direction: column;
   padding: 20px 45px;
-  background-color: #fff;
+  background-color: var(--color-bg);
   border-radius: 12px;
 }
 
@@ -574,19 +596,19 @@ img {
 .contact-item__title {
  font-size: 22px;
   line-height: 2;
-  color: #666;
+  color: var(--color-subtext);
 }
 
 .contact-item__body {
   display: block;
   flex: 0 0 62%;
-  color: #333333;
+  color: var(--color-font);
   font-size: 16px;
   line-height: 1.5;
 }
 
 .contact-item__body a {
-  color: #c93;
+  color: var(--color-main);
 }
 
 .contact-tel {
@@ -595,11 +617,11 @@ img {
 
 .btn-route {
  margin-top: 28px;
-  border: 1px solid #c93;
+  border: 1px solid var(--color-main);
   padding: 18px 29px;
   font-size: 16px;
   line-height: 2;
-  color: #c93;
+  color: var(--color-main);
   background-color: transparent;
 }
 
@@ -629,18 +651,19 @@ img {
   margin-bottom: 23px;
   padding-left: 20px;
   height: 70px;
-  background-color: #ffffff;
+  background-color: var(--color-bg);
   border: none;
   border-radius: 12px;
 }
 
 /* .feedback-input[type="tel"] {
-  color: #666;
+  color: var(--color-subtext);
 } */
 
-/* .feedback-input::placeholder { */
+.feedback-input::placeholder {
 /* padding-left: 20px; */
-/* } */
+  color: var(--color-placeholder);
+}
 
 .feedback-input--textarea {
   height: 110px;
@@ -653,7 +676,7 @@ img {
 
 .btn-feedback {
   padding: 26px 0 25px;
-  background-color: #c93;
+  background-color: var(--color-main);
   border: none;
 }
 
@@ -662,7 +685,7 @@ img {
 .footer {
   padding-top: 25px;
   padding-bottom: 52px;
-  color: #ffffff;
+  color: var(--color-bg);
   line-height: 2;
 }
 
@@ -672,7 +695,7 @@ img {
   position: relative;
   padding: 42px 52px 0;
   height: 340px;
-  background-color: #333;
+  background-color: var(--color-font);
   border-radius: 12px;
 }
 
@@ -691,7 +714,7 @@ img {
 }
 
 .footer-left--link {
-  color: #c93;
+  color: var(--color-main);
 }
 
 .footer-center {
@@ -701,7 +724,7 @@ img {
 
 .footer-link {
   margin-top: 25px;
-  color: #c93;
+  color: var(--color-main);
   line-height: 1.6;
 }
 .footer-link > a {
