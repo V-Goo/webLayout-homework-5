@@ -93,7 +93,7 @@ img {
 }
 
 .common-section {
-  margin-bottom: 70px;
+  /* margin-bottom: 70px; */
 }
 
 .common-title {
@@ -112,6 +112,7 @@ img {
   font-size: 16px;
   color: var(--color-bg);
   background-color: var(--color-main);
+  cursor: pointer;
 }
 
 /* End Common Area */
@@ -130,10 +131,14 @@ img {
 }
 
 .phone-top {
-  margin-left: 25px;
-  font-family: "Muller", "Arial Bold", sans-serif;
+  /* margin-left: 25px; */
+  padding-top: 15px;
+  padding-right: 25px;
+  padding-bottom: 15px;
+  padding-left: 25px;
   font-weight: 800;
   font-size: 22px;
+  line-height: 1;
   color: var(--color-subtext);
 }
 
@@ -147,7 +152,8 @@ img {
   margin-left: auto;
   padding-right: 10px;
   padding-left: 20px;
-  font-family: "Muller", sans-serif;
+  padding-top: 15px;
+  padding-bottom: 15px;
   font-weight: 800;
   line-height: 1.4;
   color: var(--color-main);
@@ -170,12 +176,17 @@ img {
 }
 
 .nav-list__item {
-  margin: 0 23px;
+  /* margin: 0 23px; */
   color: var(--color-font);
 }
 
+.nav-link__item  {
+  padding: 27px 23px;
+  /* background-color: #10101010; */
+}
+
 .header-search {
-  align-self: center;
+  /* align-self: center; */
   margin-left: auto;
 }
 
@@ -203,13 +214,14 @@ img {
 /* * First Screen */
 
 .first-screen {
+  padding-top: 70px;
 }
 
 .first-screen-flex {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-  margin-bottom: 69px;
+  /* justify-content: space-between; */
+  /* margin-bottom: 69px; */
 }
 
 .first-screen-title {
@@ -218,11 +230,15 @@ img {
 /* * Form Reservation Section */
 
 .flex-block {
-  display: flex;
-  flex-direction: column;
-  align-content: space-between;
-  justify-content: space-between;
-  height: 540px;
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* align-content: space-between; */
+  /* justify-content: space-between; */
+  /* height: 540px; */
+}
+
+.input-block {
+  margin-bottom: 24px;
 }
 
 .reservation-item {
@@ -235,18 +251,18 @@ img {
 }
 
 .reservation-item::placeholder {
-  /* padding-left: 15px; */
+  padding-left: 5px;
   color: var(--color-placeholder)
 }
 
 .btn-number {
   display: flex;
-  align-content: center;
+  /* align-content: center; */
 }
 
 .reservation-btn {
   border: none;
-  padding: 27px 30px;
+  padding: 25px 30px;
 }
 
 .reservation-available {
@@ -259,7 +275,11 @@ img {
   color: var(--color-main);
 }
 
-/* Special Offer Article */
+/* * Special Offer Article */
+
+.special-offer {
+  margin-left: auto;
+}
 
 .special-img {
   border-radius: 12px;
@@ -288,7 +308,7 @@ img {
 
 .flex-wrapper {
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
 }
 
 .text-price {
@@ -300,6 +320,7 @@ img {
 }
 
 .special-offer-links {
+  margin-left: auto;
 }
 
 .special-offer-link {
@@ -311,10 +332,11 @@ img {
   background-repeat: no-repeat;
 }
 
-/* About */
+/* * About */
 
 .about {
-  margin-bottom: 53px;
+  /* margin-bottom: 53px; */
+  padding-top: 70px;
 }
 
 .about-title {
@@ -331,6 +353,7 @@ img {
 /*  *Services */
 
 .service {
+  padding-top: 53px;
   /* margin-bottom: -25px; */
 }
 
@@ -342,11 +365,14 @@ img {
 .service-lists {
   display: flex;
   flex-wrap: wrap;
-  place-content: space-between;
+  /* place-content: space-between; */
+  margin-right: -25px;
+  margin-bottom: -25px;
 }
 
 .servise-item {
-  margin-bottom: 25px;
+  margin-bottom: 24px;
+  margin-right: 25px;
   max-width: 572px;
 }
 
@@ -354,6 +380,8 @@ img {
   border-radius: 12px;
   padding-bottom: 33px;
   padding-left: 45px;
+  height: 325px;
+  overflow: hidden;
   background-color: var(--color-bg);
 }
 
@@ -376,7 +404,7 @@ img {
 }
 
 .service-card-link {
-  padding-right: 15px;
+  padding-right: 20px;
   background-image: url("../img/arrow.svg");
   background-position: right;
   background-repeat: no-repeat;
@@ -391,7 +419,8 @@ img {
 /*  *Benefits Area */
 
 .benefits {
-  margin-top: -25px;
+  /* margin-top: -25px; */
+  padding-top: 69px;
 }
 
 .title-benefits {
@@ -400,10 +429,13 @@ img {
 .benefits-lists {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  /* justify-content: space-between; */
+  margin-right: -23px;
+  margin-bottom: -25px;
 }
 
 .benefits-item {
+  margin-right: 23px;
   margin-bottom: 24px;
 }
 
@@ -414,6 +446,7 @@ img {
   padding-left: 44px;
   height: 275px;
   max-width: 275px;
+  overflow: hidden;
   background-color: var(--color-bg);
 }
 
@@ -430,34 +463,41 @@ img {
   color: var(--color-font);
 }
 
-/* End Benefit Area */
-
-/*  *Siting Area */
+/*  * Siting Area */
 
 .siting {
-  margin-top: -25px;
+  /* margin-top: -25px; */
+  padding-top: 70px;
 }
 
 .siting-title {
-  line-height: 0.87;
+  line-height: 0.9;
 }
 
 .siting-lists {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  /* justify-content: space-between; */
+  margin-right: -25px;
+  margin-bottom: -27px;
 }
 
 .siting-item {
-  flex: 0 0 32%;
-  margin-bottom: 25px;
-  border-radius: 12px;
-  height: 441px;
-  background-color: var(--color-bg);
+  margin-right: 25px;
+  margin-bottom: 27px;
+  /* padding-bottom: 50px; */
+  /* flex: 0 0 32%; */
+  /* margin-bottom: 25px; */
+
+  /* height: 441px; */
+
 }
 
 .siting-card {
   padding-left: 44px;
+  height: 440px;
+  background-color: var(--color-bg);
+  border-radius: 12px;
 }
 
 .siting-card-img {
@@ -486,9 +526,11 @@ img {
 
 .apartment-rating-lists {
   display: flex;
-  flex: 1 0 auto;
-  place-content: center;
-  align-self: flex-end;
+  /* flex: 1 0 auto; */
+  /* place-content: center; */
+  /* align-self: flex-end; */
+  margin-left: 40px;
+  margin-top:10px;
 }
 
 .apartment-rating-item {
@@ -503,7 +545,6 @@ img {
 }
 
 .number {
-  font-family: "Muller", sans-serif;
   font-weight: 800;
   font-size: 22px;
 }
@@ -530,36 +571,51 @@ img {
 }
 
 .all-variant-card {
+  display: flex;
+  /* align-items: flex-end; */
   position: relative;
-}
+  /* width: 373px; */
 
-.all-variants {
-}
-
-.all-siting-img {
+  background-image: url("../img/41.jpg");
+  background-size: cover;
   border-radius: 12px;
+
 }
 
-.all-variant-title {
-  position: absolute;
-  left: 39px;
-  bottom: 47px;
+.all-variant {
+  margin-top: auto;
+  margin-left: -5px;
+  padding-right: 39px;
+  padding-bottom: 47px;
+}
+
+.all-variant-link {
   padding-right: 21px;
-  font-family: "Muller", sans-serif;
+
   font-weight: 500;
   font-size: 22px;
   line-height: 1.45;
   color: var(--color-bg);
+  
   background-image: url("../img/arrow-w.svg");
   background-position: right;
   background-size: 12px;
   background-repeat: no-repeat;
 }
 
+.all-variant-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
 /*  * Contacts Area */
 
 .contacts {
-  padding-top: 40px;
+  padding-top: 65px;
 }
 
 .contact-row{
@@ -582,7 +638,7 @@ img {
 
 .contacts-item {
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   align-items: baseline;
   padding-top: 16px;
   padding-bottom: 21px;
@@ -602,6 +658,7 @@ img {
 .contact-item__body {
   display: block;
   flex: 0 0 62%;
+  margin-left: auto;
   color: var(--color-font);
   font-size: 16px;
   line-height: 1.5;
@@ -632,9 +689,7 @@ img {
 }
 
 .feedback {
-  /* margin: 0 auto; */
   padding: 135px 180px 0;
-  /* background-color: orange; */
 }
 
 .feedback h2 {
@@ -656,12 +711,7 @@ img {
   border-radius: 12px;
 }
 
-/* .feedback-input[type="tel"] {
-  color: var(--color-subtext);
-} */
-
 .feedback-input::placeholder {
-/* padding-left: 20px; */
   color: var(--color-placeholder);
 }
 
@@ -669,10 +719,6 @@ img {
   height: 110px;
   padding-top: 10px;
 }
-
-/* .feedback-input--textarea::placeholder { */
-  /* padding-top: 15px; */
-/* } */
 
 .btn-feedback {
   padding: 26px 0 25px;
@@ -687,6 +733,7 @@ img {
   padding-bottom: 52px;
   color: var(--color-bg);
   line-height: 2;
+
 }
 
 .footer-content {
@@ -695,14 +742,8 @@ img {
   position: relative;
   padding: 42px 52px 0;
   height: 340px;
-  background-color: var(--color-font);
+  background:no-repeat 80% bottom url("../img/sun.png"), var(--color-font);
   border-radius: 12px;
-}
-
-.footer-logo-img {
-  position: absolute;
-  bottom: 0;
-  left: 63%;
 }
 
 .footer-left {
