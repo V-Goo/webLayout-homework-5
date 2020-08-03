@@ -92,8 +92,8 @@ img {
 /* Common Area */
 
 .container {
-  margin: 0 auto;
-  max-width: 1170px;
+  /* margin: 0 auto; */
+  max-width: 1198px;
 }
 
 .common-section {
@@ -280,8 +280,8 @@ img {
 }
 
 .first-screen-flex {
-  display: flex;
-  flex-wrap: wrap;
+  /* display: flex; */
+  /* flex-wrap: wrap; */
   /* justify-content: space-between; */
   /* margin-bottom: 69px; */
 }

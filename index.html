@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/solid.min.css">
+  <link rel="stylesheet" href="css/bootstrap-grid.min.css">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
   <title>Сеть Отелей Лагуна</title>
@@ -42,9 +43,11 @@
   <main class="main">
     <section class="first-screen common-section">
       <div class="container">
+
         <h1 class="visually-hidden">Сеть отелей "Лагуна"</h1>
-        <div class="first-screen-flex">
-          <section class="reservation-form section-first">
+
+        <div class="first-screen-flex row">
+          <section class="reservation-form section-first col-auto mr-auto">
             <h2 class="common-title">Быстрая бронь</h2>
             <form action="https://my-json-server.typicode.com/v-goo/demo/posts" method="POST" class="form-reservation">
               <div class="flex-block">
@@ -72,7 +75,7 @@
           </section>
           <!-- /.reservation-form -->
 
-          <article class="special-offer section-first">
+          <article class="special-offer section-first col-auto ml-auto">
             <h2 class="common-title">Спецпредложение</h2>
             <div class="offer-position">
               <div class="special-offer-img">
@@ -92,11 +95,13 @@
           </article>
         </div>
         <!-- /.special-offer -->
+
       </div>
+      <!-- /.container -->
     </section>
     <!-- /.first-screen -->
     <!-- </div> -->
-    <!-- /.container -->
+
 
     <!-- <div class="container"> -->
     <section class="about common-section">
@@ -116,62 +121,62 @@
     <section class="service common-section">
       <div class="container">
         <!-- <div class="service-column"> -->
-          <h2 class="common-title">Услуги</h2>
-          <ul class="service-lists">
+        <h2 class="common-title">Услуги</h2>
+        <ul class="service-lists">
 
-            <li class="servise-item">
-              <article class="service-card">
-                <div class="servise-card-img">
-                  <img src="img/10.jpg" alt="Эксклюзивное обслуживание" class="card-img">
-                </div>
-                <h3 class="service-card-title">
-                  <a href="#" class="service-card-link">Эксклюзивное обслуживание</a>
-                </h3>
-                <p class="service-card-text">Равным образом постоянный количественный рост и сфера нашей активности</p>
-              </article>
-            </li>
+          <li class="servise-item">
+            <article class="service-card">
+              <div class="servise-card-img">
+                <img src="img/10.jpg" alt="Эксклюзивное обслуживание" class="card-img">
+              </div>
+              <h3 class="service-card-title">
+                <a href="#" class="service-card-link">Эксклюзивное обслуживание</a>
+              </h3>
+              <p class="service-card-text">Равным образом постоянный количественный рост и сфера нашей активности</p>
+            </article>
+          </li>
 
-            <li class="servise-item">
-              <article class="service-card">
-                <div class="servise-card-img">
-                  <img src="img/15.jpg" alt="" class="card-img">
-                </div>
-                <h3 class="service-card-title">
-                  <a href="#" class="service-card-link">Аренда банкетных залов</a>
-                </h3>
-                <p class="service-card-text">Значимость этих проблем настолько очевидна, что дальнейшее развитие
-                  различных
-                  форм.</p>
-              </article>
-            </li>
+          <li class="servise-item">
+            <article class="service-card">
+              <div class="servise-card-img">
+                <img src="img/15.jpg" alt="" class="card-img">
+              </div>
+              <h3 class="service-card-title">
+                <a href="#" class="service-card-link">Аренда банкетных залов</a>
+              </h3>
+              <p class="service-card-text">Значимость этих проблем настолько очевидна, что дальнейшее развитие
+                различных
+                форм.</p>
+            </article>
+          </li>
 
-            <li class="servise-item">
-              <article class="service-card">
-                <div class="servise-card-img">
-                  <img src="img/12.jpg" alt="" class="card-img">
-                </div>
-                <h3 class="service-card-title">
-                  <a href="#" class="service-card-link">Сауны, бассейны, бани, фитнес-залы</a>
-                </h3>
-                <p class="service-card-text">Не следует, однако забывать, что начало повседневной работы по формированию
-                  позиции</p>
-              </article>
-            </li>
+          <li class="servise-item">
+            <article class="service-card">
+              <div class="servise-card-img">
+                <img src="img/12.jpg" alt="" class="card-img">
+              </div>
+              <h3 class="service-card-title">
+                <a href="#" class="service-card-link">Сауны, бассейны, бани, фитнес-залы</a>
+              </h3>
+              <p class="service-card-text">Не следует, однако забывать, что начало повседневной работы по формированию
+                позиции</p>
+            </article>
+          </li>
 
-            <li class="servise-item">
-              <article class="service-card">
-                <div class="servise-card-img">
-                  <img src="img/11.jpg" alt="" class="card-img">
-                </div>
-                <h3 class="service-card-title">
-                  <a href="#" class="service-card-link">Охраняемые автомобильные стоянки</a>
-                </h3>
-                <p class="service-card-text">Не следует, однако забывать, что начало повседневной работы по формированию
-                  позиции</p>
-              </article>
-            </li>
+          <li class="servise-item">
+            <article class="service-card">
+              <div class="servise-card-img">
+                <img src="img/11.jpg" alt="" class="card-img">
+              </div>
+              <h3 class="service-card-title">
+                <a href="#" class="service-card-link">Охраняемые автомобильные стоянки</a>
+              </h3>
+              <p class="service-card-text">Не следует, однако забывать, что начало повседневной работы по формированию
+                позиции</p>
+            </article>
+          </li>
 
-          </ul>
+        </ul>
         <!-- </div> -->
       </div>
       <!-- /.cintainer -->
@@ -637,7 +642,8 @@
             <li class="footer-left--item">© 2012-2020 Управляющая компания Объединенной сети «Лагуна Хотелс»</li>
             <li class="footer-left--item">Представленная на сайте информация носит справочный характер <br> и не
               является публичной офертой</li>
-            <li class="footer-left--item"><a class="footer-left--link link-decoration" href="#">Политика конфиденциальности</a>
+            <li class="footer-left--item"><a class="footer-left--link link-decoration" href="#">Политика
+                конфиденциальности</a>
             </li>
           </ul>
         </div>
