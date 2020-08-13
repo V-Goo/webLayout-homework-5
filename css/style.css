@@ -93,11 +93,15 @@ img {
 
 .container {
   /* margin: 0 auto; */
-  max-width: 1198px;
+  max-width: 1200px;
 }
 
 .common-section {
   /* margin-bottom: 70px; */
+}
+
+.pad0 {
+  padding: 0;
 }
 
 .common-title {
@@ -339,14 +343,17 @@ img {
 /* * Special Offer Article */
 
 .special-offer {
-  margin-left: auto;
+  /* margin-left: auto; */
 }
 
 .special-img {
+  /* width: 590px; */
   border-radius: 12px;
 }
 
 .offer-position {
+  /* box-sizing: initial; */
+  /* padding: 20px; */
   position: relative;
 }
 
@@ -483,14 +490,14 @@ img {
 
 .service-card-text {
   width: 75%;
-  line-height: 2;
+  line-height: 2.3;
   color: var(--color-font);
 }
 
 /*  *Benefits Area */
 
 .benefits {
-  padding-top: 69px;
+  padding-top: 45px;
 }
 
 .title-benefits {
@@ -513,7 +520,7 @@ img {
   border-radius: 12px;
   padding-top: 44px;
   padding-bottom: 40px;
-  padding-left: 44px;
+  padding-left: 40px;
   height: 275px;
   max-width: 275px;
   overflow: hidden;
@@ -536,25 +543,25 @@ img {
 /*  * Siting Area */
 
 .siting {
-  padding-top: 70px;
+  padding-top: 45px;
 }
 
 .siting-title {
   line-height: 0.9;
 }
 
-.siting-lists {
+/* .siting-lists {
   display: flex;
   flex-wrap: wrap;
   /* justify-content: space-between; */
-  margin-right: -25px;
-  margin-bottom: -27px;
-}
+  /* margin-right: -25px; */
+  /* margin-bottom: -27px; */
+/* }  */
 
-.siting-item {
+/* .siting-item {
   margin-right: 25px;
   margin-bottom: 27px;
-}
+} */
 
 .siting-card {
   padding-left: 44px;
@@ -675,18 +682,18 @@ img {
 /*  * Contacts Area */
 
 .contacts {
-  padding-top: 65px;
+  padding-top: 47px;
 }
 
-.contact-row{
+/* .contact-row{
   display: flex;
-}
+} */
 
 /* * Contact Section */
 
-.section-contact {
+/* .section-contact {
   flex: 0 0 40.3%;
-}
+} */
 
 .contacts-lists {
   display: flex;
@@ -744,12 +751,12 @@ img {
 
 /* * Secton Feedback */
 
-.section-feedback {
+/* .section-feedback {
   flex: 0 0 59.7%;
-}
+} */
 
 .feedback {
-  padding: 135px 180px 0;
+  padding: 135px 180px 0 150px;
 }
 
 .feedback h2 {
@@ -789,17 +796,20 @@ img {
 /* * Footer Area */
 
 .footer {
-  padding-top: 25px;
-  padding-bottom: 52px;
+  padding: 27px 56px 1px;
+  /* padding-top: 25px; */
+  /* padding-bottom: 52px; */
+  /* padding-left: 25px; */
+  /* padding-right: 25px; */
   color: var(--color-bg);
   line-height: 2;
 
 }
 
 .footer-content {
-  display: flex;
-  flex-wrap: wrap;
-  position: relative;
+  /* display: flex; */
+  /* flex-wrap: wrap; */
+  /* position: relative; */
   padding: 42px 52px 0;
   height: 340px;
   background:no-repeat 80% bottom url("../img/sun.png"), var(--color-font);
@@ -807,7 +817,7 @@ img {
 }
 
 .footer-left {
-  flex: 0 0 30%;
+  /* flex: 0 0 30%; */
 }
 
 .footer-left--item {
@@ -819,8 +829,9 @@ img {
 }
 
 .footer-center {
-  flex: 0 0 39%;
-  margin: 0 auto;
+  /* padding-left: 0; */
+  /* flex: 0 0 39%; */
+  /* margin: 0 auto; */
 }
 
 .footer-link {
@@ -833,10 +844,18 @@ img {
 }
 .footer-right {
   margin-left:  auto;
+  /* padding-top: 5px; */
+}
+
+.footer-social__list {
+  display: flex;
+  flex-direction: column;
+  /* margin-left: auto; */
   padding-top: 5px;
 }
 
 .footer-social__item {
+  margin-left: auto;
   margin-bottom: 10px;
 }
 
